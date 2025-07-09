@@ -1,19 +1,21 @@
-//1- Crea un objeto llamado auto que tenga algunas características como el color, marca, modelo y si está encendido o apagado. Crea los métodos necesarios para permitir encender y apagar el auto.
+//Crea un objeto llamado auto que tenga algunas características como el color, marca, modelo y si está encendido o apagado. Crea los métodos necesarios para permitir encender y apagar el auto.
 
-const auto = {
-    marca: 'Toyota',
-    modelo: 'Corolla',
-    año: 2007,
-    color: 'Gris',
-    //metodos
+const Auto = {
+  Marca: 'Fiat',
+  Modelo: 'Cronos',
+  Color: 'Gris',
+  Estado: false,
 
-   encendido: () =>{
-    encendido = true
-    document.writeln('El auto esta encendido')
-   },
-   apagado: () =>{
-    apagado = false
-    document.writeln('El auto esta apagado')
-   }
+  Encender : function() {
+    this.Estado =true
+    document.writeln('<p>Se encendio el auto 🟢</p>')
+  },
+  Apagar : function() {
+    this.Estado = false
+    document.writeln('<p>Se apago el auto 🔴</p>')
 
+  }
 }
+
+Auto.Encender()
+Auto.Apagar()
