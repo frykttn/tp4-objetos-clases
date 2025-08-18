@@ -2,9 +2,9 @@
 
 const auto = {
   marca: 'Fiat',
+  anio: '2023',
   modelo: 'Cronos',
   color: 'Gris',
-  estado: false,
 
   encender : function() {
     document.writeln('<p>Se encendio el auto 🟢</p>')
