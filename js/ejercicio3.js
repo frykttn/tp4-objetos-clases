@@ -1,6 +1,6 @@
 //3-Escribe una clase que permita crear distintos objetos “rectángulos”, con las propiedades de alto y ancho, mas los métodos necesarios para modificar y mostrar sus propiedades, calcular el perímetro y el área
 
-class rectangulo {
+class Rectangulo {
   #alto;
   #ancho;
   constructor(alto, ancho) {
@@ -42,7 +42,7 @@ class rectangulo {
 }
 
 
-const rectangulos = new rectangulo(
+const rectangulos = new Rectangulo(
     parseInt(prompt("Ingrese el alto")),
     parseInt(prompt("Ingrese el ancho"))
 );
