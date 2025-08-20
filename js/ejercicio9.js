@@ -7,52 +7,34 @@ class Animal {
     this.#nombre = nombre;
     this.#edad = edad;
   }
-  get nombre (){
-        return this.#nombre
-    }
+  get nombre() {
+    return this.#nombre;
+  }
 
-    get edad (){
-        return this.#edad
-    }
+  get edad() {
+    return this.#edad;
+  }
 
-    set nombre (nuevoNombre){
-        this.#nombre = nuevoNombre
-    }
+  set nombre(nuevoNombre) {
+    this.#nombre = nuevoNombre;
+  }
 
-    set edad (nuevaEdad){
-        this.#edad = nuevaEdad
-    }
+  set edad(nuevaEdad) {
+    this.#edad = nuevaEdad;
+  }
 
-   emitirSonido(){
+  emitirSonidoPerro() {
+    document.writeln(`El perro dice: guau guau! <br>`);
+  }
 
-    }
-
+  emitirSonidoGato() {
+    document.writeln(`El gato dice: miau miau!`);
+  }
 }
 
-class Perro extends Animal {
-    constructor (nombre, edad){
-        super (nombre, edad);
-    }
 
-    emitirSonido(){
-        document.writeln(`El perro dice: guau guau! <br>`);
-    }
+const perro = new Animal
+const gato = new Animal
 
-}
-
-class Gato extends Animal {
-    constructor (nombre, edad){
-        super (nombre, edad);
-    }
-
-    emitirSonido(){
-        document.writeln(`El gato dice: miau miau!`);
-    }
-
-}
-
-const perro = new Perro 
-const gato = new Gato 
-
-perro.emitirSonido();
-gato.emitirSonido();
+perro.emitirSonidoPerro()
+gato.emitirSonidoGato()
